@@ -1,0 +1,11 @@
+---
+applications:
+- name: primer-api
+  path: C:\Users\AROME103\IdeaProjects\primer-api\build\libs\primer-api-0.0.1-SNAPSHOT.jar
+  buildpacks:
+  - java_buildpack_offline
+  memory: 1G
+  instances: 1
+  env:
+    JAVA_OPTS: -Dlogging.level.org.springframework.web=WARN
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'    

@@ -1,0 +1,1 @@
+DELETE FROM Provincias WHERE Nombre = 'Misiones';
